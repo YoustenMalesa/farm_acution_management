@@ -9,12 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".LoginActivity"
-            android:theme="@style/LoginTheme">
-
-        </activity>
-        <activity android:name=".SplashScreen"
+        <activity
+            android:name=".view.LoginActivity"
+            android:theme="@style/LoginTheme"></activity>
+        <activity
+            android:name=".view.SplashScreen"
             android:theme="@style/LoginTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignupActivity"
-            android:label="@string/signUp">
-
-        </activity>
+        <activity
+            android:name=".view.SignupActivity"
+            android:label="@string/signUp"></activity>
+        <activity
+            android:name=".view.AuctionActivity"
+            android:label="@string/auction"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

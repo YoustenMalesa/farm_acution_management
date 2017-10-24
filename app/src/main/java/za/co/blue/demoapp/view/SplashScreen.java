@@ -1,9 +1,12 @@
-package za.co.blue.demoapp;
+package za.co.blue.demoapp.view;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import za.co.blue.demoapp.view.LoginActivity;
+import za.co.blue.demoapp.R;
 
 public class SplashScreen extends AppCompatActivity {
     private final int SPLASH_DURATION = 3000;
