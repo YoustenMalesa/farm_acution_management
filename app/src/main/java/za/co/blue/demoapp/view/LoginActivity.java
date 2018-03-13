@@ -3,9 +3,11 @@ package za.co.blue.demoapp.view;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -44,6 +46,12 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
         startActivity(mainView);
 
         finish();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Toast.makeText(getApplicationContext(), "Clicked on settings", Toast.LENGTH_LONG).show();
+        return super.onOptionsItemSelected(item);
     }
 
 }
